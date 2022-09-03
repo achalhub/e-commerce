@@ -56,8 +56,35 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 
+
+
+
+
 /*######################################################################################*/
-/*Sección lgin*/
+/*Sección Cabeçalho (formatação do botão*/
+
+a.botao__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0.15rem;
+    border-style: solid;
+}
+
+a.botao__login p {
+    text-align: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+
+
+
+/*######################################################################################*/
+/*Sección login*/
 .login__conteiner {
     display: flex;
 
@@ -104,20 +131,32 @@ button.login, .botao__login {
     cursor: pointer;
 }
 
-a.botao__login{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 0.15rem;
-    border-style: solid;
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    /*######################################################################################*/
+    /*Sección login*/
+
+
+    .login{
+        width: 20.8rem;
+    }
+
+
+
+
+
 }
 
-a.botao__login p {
-    text-align: center;
+/*Mobile*/
+@media screen and (max-width: 425px) {
 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.9rem;
+    .login{
+        width: 15.8rem;
+    }
 
-}
+}   
