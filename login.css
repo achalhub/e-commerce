@@ -154,9 +154,7 @@ button.login, .botao__login {
 
 /*Mobile*/
 @media screen and (max-width: 425px) {
-
     .login{
         width: 15.8rem;
     }
-
 }   

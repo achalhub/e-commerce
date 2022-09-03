@@ -1,0 +1,83 @@
+.produto{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E5E5E5;
+    padding: 3rem 0rem;
+}
+
+.titulo__adicionar__produto{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 0rem;
+}
+
+.conteiner__input {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 30rem;
+    
+}
+
+.conteiner__input input, .conteiner__input a {
+    margin-bottom: 1rem;
+    border: none;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 4px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.conteiner__input input:nth-child(n) {
+    flex: 1;
+}
+
+.conteiner__input input:nth-child(5n) {
+    flex: 2;
+}
+
+.conteiner__input a {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2A7AE4;
+    color: white;
+}
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    /*######################################################################################*/
+    /*Sección login*/
+
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .produto{
+        padding: 1rem 0rem;
+    }
+    
+    .titulo__adicionar__produto{
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .conteiner__input {
+        width: 20rem;
+    }
+
+
+    
+}   
