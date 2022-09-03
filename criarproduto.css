@@ -21,12 +21,13 @@
     
 }
 
-.conteiner__input input, .conteiner__input a {
+.conteiner__input > :nth-child(1n) {
     margin-bottom: 1rem;
     border: none;
     height: 3.5rem;
     width: 100%;
     border-radius: 4px;
+    padding-left: 15px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -38,8 +39,9 @@
     flex: 1;
 }
 
-.conteiner__input input:nth-child(5n) {
+.conteiner__input textarea {
     flex: 2;
+    padding-top: 15px;
 }
 
 .conteiner__input a {
