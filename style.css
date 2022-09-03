@@ -305,6 +305,10 @@ li.linkproduto__texto a{
     padding-right: 0.6rem;
 }
 
+.lista__contato p{
+    cursor: pointer;
+}
+
 .lista__contato__primeiro {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -345,261 +349,31 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media screen and (min-width: 425px) and (max-width: 768px) {
     /*######################################################################################*/
     /*Sección Menu*/
-    .menu, .menu__compra{
-        padding: 0rem 4%;
-    }
-
     .menu__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 4.5rem;
-
+        margin-bottom: 1rem;
     }
 
-    .menu__list img {
-        width: 6.2rem;
-        height: 1.7rem;
-    }
 
-    .menu__list {
-        display: flex;
-        align-items: center;
-        width: 83%;
-
-    }
-
-    .menu__list input {
-        margin-left: 1.5rem;
-        border: none;
-        height: 3rem;
-        width: 40%;
-        align-items: center;
-        border-radius: 20px;
-        background-color: var(--cor-de-botoes-e-figuras);
-    }
-
-    .botao__login {
-        width: 13.4rem;
-        height: 3rem;
-        border-color: #2A7AE4;
-        color: #2A7AE4;
-        background-color: var(--cor-de-fundo);
-    }
     /*######################################################################################*/
     /*seção cabecalhos*/
-    .cabecalho button{
-        border: none;
-        padding: 0;
-        margin-bottom: 3rem;
-        cursor: pointer;
-        width: 100%;
-    }
-    
-    .cabecalho button img {
-        width: 100%;
-        height: auto;
-    }
+
 
 
     /*######################################################################################*/
     /*Primeiro Menu de Compra*/
-    .menu__titulo {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.37rem;
-        margin: 0;
-    }
-
-    .ver__tudo a{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1rem;
-        color: #2A7AE4;
-    }
-
-    .painel__quadro ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .conteiner__titulo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .painel__geral {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 4rem;
-    }
-
-    .painel__quadro {
-        width: 100%;
-        height: auto;
-        padding: 0.5rem;
-    }
-
-
-
-    .menu__list__item{
-        margin-top: 0.5rem;
-    }
-    .menu__list__item img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .produto__texto{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.88rem;
-        line-height: 1rem;
-    }
-
-    .preco__texto{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.19rem;
-    }
-
-    li.linkproduto__texto a{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.19rem;
-
-        /* Azul/100% */
-        color: #2A7AE4;
-    }
-
-    .ultimo__quadro{
-        margin: 0;
-    }
-
     .painel__geral > div:nth-child(n+5) {
         display: none;
     }
 
-
-
-
     /*######################################################################################*/
     /*Seção de contatos*/
-
-    .contato {
-        display: flex;
-        justify-content: space-between;
-        padding: 4.37rem 3rem;
-
-        background-color: var(--cor-de-fundo-destaque);
-    }
-
-    .formcontato__subtext{
-        flex: 0;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-
-    .formcontato__form{
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-direction: column;
-        align-items: stretch;
-        border: none;
-        width: 100%;
-        flex: 2;
-    }
-
-    .formcontato__input {
-        border: none;
-        height: 3.5rem;
-        border-radius: 4px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    .formcontato__textarea{
-        border: none;
-        height: 5.2rem;
-        border-radius: 4px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    .formcontato__botao {
-        width: 144px;
-        height: 51px;
-        border: none;
-        background: var(--cor-de-botao);
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        color: var(--cor-de-fundo);
-    }
-
-    .formcontato {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-    }
-
     .contato div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        flex: 1;
         padding-right: 1rem;
     }
-
-    div.lista__contato {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex: 1;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1rem;
-        text-align: left;
-        margin-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .lista__contato__primeiro {
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-
-    .lista__contato__segundo {
-        margin-bottom: 0rem;
-    }
-
 
 }
 
@@ -608,55 +382,27 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     /*######################################################################################*/
     /*Sección Menu*/
-    .menu, .menu__compra{
-        padding: 0rem 4%;
+    a.botao__login {
+        margin-left: 0.5rem;
     }
 
     .menu__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 4.5rem;
-
+        margin-bottom: 0.5rem;
     }
 
     .menu__list img {
-        width: 6.2rem;
-        height: 1.7rem;
+        width: 8.2rem;
     }
 
-    .menu__list {
-        display: flex;
-        align-items: center;
-        width: 83%;
-
-    }
-
-    .menu__list input {
-        margin-left: 0.4rem;
-        border: none;
-        height: 3rem;
-        width: 8.3rem;
-        align-items: center;
-        border-radius: 20px;
-        background-color: var(--cor-de-botoes-e-figuras);
-    }
-
-    .botao__login {
-        width: 13.4rem;
-        height: 3rem;
-        border-color: #2A7AE4;
-        color: #2A7AE4;
-        background-color: var(--cor-de-fundo);
+    .pesquisa__input{
+        display: none;
     }
 
     /*######################################################################################*/
     /*seção cabecalhos*/
     .cabecalho button{
-        border: none;
-        padding: 0;
-        margin-bottom: 3rem;
-        cursor: pointer;
+        margin-bottom: 1.5rem;
         width: 100%;
         height: 12rem;
     }
@@ -664,8 +410,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     .cabecalho button img {
         width: 100%;
         height: 100%;
-
-
         object-position: -4rem;
         object-fit: cover;
     }
@@ -674,89 +418,13 @@ Utiliza las referencias de los breakpoints @media abajo */
     
     /*######################################################################################*/
     /*Primeiro Menu de Compra*/
-    .menu__titulo {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.37rem;
-        margin: 0;
-    }
-
-    .ver__tudo a{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1rem;
-        color: #2A7AE4;
-    }
-
-    .painel__quadro ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .conteiner__titulo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .painel__geral {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 4rem;
         flex-wrap: wrap;
     }
 
     .painel__quadro {
         width: 45%;
-        height: auto;
-        padding: 0.5rem;
-    }
-
-    .menu__list__item{
-        margin-top: 0.5rem;
-    }
-    .menu__list__item img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .produto__texto{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.88rem;
-        line-height: 1rem;
-    }
-
-    .preco__texto{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.19rem;
-    }
-
-    li.linkproduto__texto a{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.19rem;
-
-        /* Azul/100% */
-        color: #2A7AE4;
-    }
-
-    .ultimo__quadro{
-        margin: 0;
-    }
-
-    .painel__geral > div:nth-child(n+5) {
-        display: none;
     }
 
     
@@ -768,75 +436,15 @@ Utiliza las referencias de los breakpoints @media abajo */
         flex-direction: column;
         justify-content: space-between;
         padding: 2rem 1rem;
-
-        background-color: var(--cor-de-fundo-destaque);
     }
 
     .formcontato__subtext{
-        flex: 0;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1rem;
-
         text-align: justify;
     }
 
     .formcontato__form{
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-direction: column;
-        align-items: stretch;
-        border: none;
-        width: 100%;
         height: 14rem;
         flex: 2;
-    }
-
-    .formcontato__input {
-        border: none;
-        height: 3.5rem;
-        border-radius: 4px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    .formcontato__textarea{
-        border: none;
-        height: 5.2rem;
-        border-radius: 4px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    .formcontato__botao {
-        width: 144px;
-        height: 51px;
-        border: none;
-        background: var(--cor-de-botao);
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        color: var(--cor-de-fundo);
-    }
-
-    .formcontato {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
     }
 
     .contato div {
@@ -850,26 +458,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     div.lista__contato {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        flex: 1;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1rem;
-        text-align: left;
-        margin-left: 0rem;
-        padding-right: 0rem;
         margin-bottom: 2rem;
+        margin-left: 0;
     }
 
-    .lista__contato__primeiro {
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-
-    .lista__contato__segundo {
-        margin-bottom: 0rem;
-    }
 }   
