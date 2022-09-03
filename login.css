@@ -61,7 +61,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 
 /*######################################################################################*/
-/*Sección Cabeçalho (formatação do botão*/
+/*Sección Cabeçalho (formatação do botão)*/
 
 a.botao__login{
     display: flex;
@@ -69,6 +69,14 @@ a.botao__login{
     justify-content: space-around;
     border: 0.15rem;
     border-style: solid;
+    transition: 1.5s background ;
+    border-radius: 0.5rem;
+}
+
+a.botao__login:hover {
+    background-color: black;
+    color: white;
+    scale: 1.15;
 }
 
 a.botao__login p {
@@ -78,9 +86,11 @@ a.botao__login p {
     font-style: normal;
     font-weight: 600;
     font-size: 0.9rem;
-
 }
 
+.menu__header a {
+    margin-right: 1rem;
+}
 
 
 /*######################################################################################*/
@@ -154,6 +164,19 @@ button.login, .botao__login {
 
 /*Mobile*/
 @media screen and (max-width: 425px) {
+
+
+
+    /*botoes do menu adicionar produto e administrativo*/
+    a.botao__login p{
+        font-size: 0.7rem;
+    }
+
+    .menu__header a {
+        margin-right: 0.2rem;
+    }
+
+    /*menu do cadastro*/
     .login{
         width: 15.8rem;
     }

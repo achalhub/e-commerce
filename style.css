@@ -93,6 +93,7 @@ https://en.bem.info/methodology/quick-start/*/
     color: #2A7AE4;
     background-color: var(--cor-de-fundo);
 }
+
 /*######################################################################################*/
 /*seção cabecalhos*/
 .cabecalho button{
@@ -150,7 +151,19 @@ https://en.bem.info/methodology/quick-start/*/
     width: 100%;
     height: auto;
     padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: 1.5s background ;
+    border-radius: 0.7rem;
 }
+
+.painel__quadro:hover {
+    background-color: black;
+    color: white;
+    scale: 1.02;
+
+}
+
+
 
 .menu__list__item{
     margin-top: 0.5rem;
@@ -190,6 +203,7 @@ li.linkproduto__texto a{
 .ultimo__quadro{
     margin: 0;
 }
+
 
 
 
@@ -260,6 +274,8 @@ li.linkproduto__texto a{
     font-weight: 400;
     font-size: 1rem;
     color: var(--cor-de-fundo);
+
+    cursor: pointer;
 }
 
 .formcontato {
@@ -428,6 +444,8 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: auto;
         padding: 0.5rem;
     }
+
+
 
     .menu__list__item{
         margin-top: 0.5rem;
